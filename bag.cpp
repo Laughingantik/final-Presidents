@@ -35,6 +35,22 @@ bool bag::isDone() const
 {
 	return ((bag*)this)->my_index >= ((bag*)this)->my_size;
 }
+void bag::setIndex(int number)
+{
+	//**********hmmmm this doesnt seem right, but a change here************
+	//going to need my_index = number; in the main .cpp file according to teacher " All the function needs to do is set the current index location: my_index = number;"
+	// Later, when you write the main program, after you load all the presidents you need to create a 
+	//variable called size and make it equal to the size of the president vector: int size = bagOfPresidents.size();
+
+	/*Then in the do loop,  generate a "unique" values, random number form one to size.
+	srand((unsigned)time(0));
+	randNumber = rand() % size;
+	*/
+	/*Lastly set the index value for the bag of presidents to that random number:
+	bagOfPresidents.setIndex(randNumber);
+	Don't forget, every time you guess the president correctly, you remove the president from the bag and reduce size by one.
+	*/
+}
 
 int bag::size() const
 {
