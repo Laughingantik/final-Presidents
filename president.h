@@ -14,7 +14,7 @@ public:  // class member functions
    Presidents();
    Presidents(int presidentNumber, string presidentName, string birthDeathDates,
        string dateTookOffice, string dateLeftOffice,
-       string party, string previosOffice, string vicePresident);
+       string party, string previousOffice, string vicePresident);
 
    //--accessors
 

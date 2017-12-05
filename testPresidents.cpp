@@ -55,9 +55,9 @@ int main()
     cout << president.getPresidentNumber() << ": " << president.getPresidentName() << endl;
   }
   // ...
-  int guess;
-  do {
-    guess = askPresidentNumber("Barack Obama");
-  } while (guess != -1);
+  // int guess;
+  // do {
+  //   guess = askPresidentNumber("Barack Obama");
+  // } while (guess != -1);
   return 0;
 }
