@@ -9,6 +9,7 @@
 #include <vector>
 using namespace std;
 
+typedef string BAG_ELEMENT_TYPE;
 const int DEFAULT_INITIAL_BAG_CAPACITY = 16;
 
 class bag {
