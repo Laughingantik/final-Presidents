@@ -15,18 +15,18 @@ class bag {
 public:
 	//--constructors
 	bag();
-	// post: Size of this bag is 0. 
-	//       Initial capacity == DEFAULT_INITIAL_BAG_CAPACITY 
+	// post: Size of this bag is 0.
+	//       Initial capacity == DEFAULT_INITIAL_BAG_CAPACITY
 
 	bag(int initCapacity);
 	// pre:  initCapacity >= 1  (remember you don't need to check for pre conditions)
 	// pre conditions are requirments of the class that must be met before method is called, chapter 3, page 73
-	// post: size of this bag is bag to 0 with the capacity 
-	//       to store initCapacity BAG_ELEMENT_TYPE objects 
+	// post: size of this bag is bag to 0 with the capacity
+	//       to store initCapacity BAG_ELEMENT_TYPE objects
 
 	//--modifiers
 	void add(BAG_ELEMENT_TYPE newElement);
-	// post: Add newElement to this bag and increase 
+	// post: Add newElement to this bag and increase
 	//       the size of this bag object increased by +1.
 	//       Note: If capacity < size, the bag doubles it capacity
 
@@ -36,7 +36,7 @@ public:
 	void sort();
 	// post: sort in ascending order
 
-	//--accessors 
+	//--accessors
 
 	int capacity() const;
 	// post: return the maximum number of elements that could be stored in this bag
@@ -64,7 +64,7 @@ public:
 	// ((bag*)this)->my_index++;
 
 	bool isDone() const;
-	// post: Returns true if the collection has been traversed 
+	// post: Returns true if the collection has been traversed
 
 	void setIndex(int Number);
 	//**********idk if this is right*******
@@ -72,6 +72,8 @@ public:
 	BAG_ELEMENT_TYPE currentItem() const;
 	// pre:  ! isDone && my_size > 0  (remember you don't need to check for pre conditions)
 	// post: Returns the item pointed to by the my_index
+
+	int occurrencesOf(BAG_ELEMENT_TYPE matchValue) const;
 
 private:
 	int my_size;
