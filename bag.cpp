@@ -1,5 +1,6 @@
 // Gavin Anderson, CIS127, Activity 11.2
 
+#include <algorithm>
 #include "bag.h"
 using namespace std;
 
@@ -74,8 +75,8 @@ int bag::occurrencesOf(BAG_ELEMENT_TYPE matchValue) const
 }
 
 void bag::sort()
-{
-	std::sort(((bag*)this)->my_element.begin(), ((bag*)this)->my_element.end());
+{																				// adding include algorithm stopped the other errors but
+	std::sort(((bag*)this)->my_element.begin(), ((bag*)this)->my_element.end());  //still getting errors here: "bag::sort function does not take 2 arguments" & "sort: is not a member of std
 }
 
 bool bag::remove(BAG_ELEMENT_TYPE removalCandidate)
